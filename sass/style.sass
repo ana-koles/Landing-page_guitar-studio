@@ -1,0 +1,668 @@
+@import "normalizes.scss";
+@import "resets.scss";
+
+* 
+    box-sizing: border-box // чтобы вссе padding и margin 
+    // входили в состав размера нашего элемента
+
+@font-face
+    font-family: "GeoramaT"
+    src: url('../fonts/Georama-Regular.ttf')
+    font-display: swap //чтобы сначала загрузился станадртный шрифт
+    font-weight: regular
+    font-style: normal
+    
+@font-face
+    font-family: "GeoramaT"
+    src: url('../fonts/Georama-Bold.ttf')
+    font-display: swap
+    font-weight: bold
+    font-style: normal
+
+html // без точки
+    font-family: "GeoramaT" //надо задвать обоим шрифтам одинаковое font-family, чтобы можно было потом просто настраивать style
+    font-weight: regular
+
+$color-blue: #4686E2 // переменная
+$color-orange: #FB875B
+$color-grey: #D2D2D2
+
+.container
+    position: relative
+    max-width: 1140px
+    margin: 0 auto
+    
+.main-section //фон всей страницы
+    position: relative // чтобы потом назначить overflow
+    overflow: hidden // скрывает все, что заходит за границы секции
+    height: 800px
+    background: #F1F1F1
+    padding-top: 20px // отступ от края к меню
+    margin-bottom: 80px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between // размещение меню справа
+        height: 67px
+        align-items: center
+        font-weight: bold
+    &__content-container
+        position: relative
+        display: flex
+        flex-direction: row
+    &__first-elipse //позиционирование кругов (блок elipse)
+        position: absolute 
+        top: 0px
+        right: 280px
+    // позиционирование второго (большого) круга
+    &__second-elipse
+        position: absolute 
+        top: 600px
+        right: -150px //минусовые значения чтобы уйти за край фрейма
+
+
+.logo
+    width: 130px
+
+.nav-menu //пукнты меню размещаем горизонтально
+    &__list
+        display: flex //flexbox
+        flex-direction: row 
+    &__item
+        margin-right: 35px //расстояние между элементами меню
+        font-size: 16px
+        &:last-child
+            margin-right: 0px
+    a // декорирование ссылок в nav меню сверху
+        text-decoration: none
+        color: black
+
+.left-wrapper
+    position: relative // если ставим позицию absolute
+    // для child элемента, то родительскому нужно поставиь
+    // позициюи relative
+    &__image
+        position: relative // надо поставить чтобы работал
+        // z-index
+        z-index: 3 // расположение в плоскости по отношению к другим элементам
+    &__rectangle-blue
+        position: absolute 
+        top: 120px
+        left: -80px
+        width: 526px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05) 
+        // 0px - отклонение по горизонтали, 5px - отклонение по вертикали
+        // 10px - радиус размытия, () - цвет
+        transform: rotate(-74.84deg)
+        z-index: 0
+    &__rectangle-orange
+        position: absolute 
+        top: 130px
+        left: -45px
+        width: 608px
+        height: 205px
+        background: $color-orange
+        border-radius: 100px
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05) 
+        transform: rotate(-51.67deg)
+        z-index: 2
+    &__rectangle-grey
+        position: absolute 
+        top: 190px
+        left: 25px
+        width: 560px
+        height: 220px
+        background: $color-grey
+        border-radius: 100px
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05) 
+        transform: rotate(-29.39deg)
+        z-index: 1
+
+.icons // обращаемся к блоку
+    display: inline-flex
+    flex-direction: row // или вместо двух строк display: inline-flex
+    &__items
+        display: flex
+        justify-content: center // выравнивание иконок
+        align-items: center
+        height: 34px
+        width: 34px
+        border: 1px solid black
+        border-radius: 100px
+        margin-right: 15px
+        &:last-child
+            margin-right: 0px        
+        i 
+            font-size: 20px
+// так как у нас иконочный шрифт, применяем
+// характеристики как для текста
+
+.right-wrappter
+    width: 400px
+    position: absolute //чтобы положение правого блока 
+    // не зависило от левого 
+    // в родительском контейнере main-section__content-container ОБЯЗАТЕЛЬНО должно стоять
+    // position: relative
+    top: 60px // растояние от края фрейма
+    right: 0px
+    z-index: 2
+    &__icon-box
+        margin-bottom: 1px
+        display: flex
+        justify-content: flex-end // иконки по правому краю контейнера
+    &__title
+        margin-bottom: 50px // отодвигаем текст снизу
+    &__text
+        font-size: 20px
+        margin-bottom: 34px
+
+.title
+    font-size: 64px
+    position: relative
+    font-weight: bold
+    &__hr // горизонтальная полоска под имененм
+        bottom: 300px
+        width: 90px // длина полосы
+        position: absolute
+        top: 64px // растояние между текстом и полоской
+        margin: 0px // зачно могут большие Margins
+        //border: none
+        border: none // убираем все рамку чтобы сработал border-top 
+        // и не было рамки с 4х сторон
+        border-top: 1px solid black
+
+
+.buttons
+    display: inline-flex // выравнили кнопку, иконку и текст чата
+    &__icon-btn
+        display: inline-flex // выравниваем иконку и текст чата
+        align-items: center
+        img
+            margin-right: 5px
+    &__main-btn
+        margin-right: 15px
+        width: 220px
+        height: 50px
+        left: 923px
+        top: 384px
+        background: $color-orange
+        border-radius: 100px
+        border: none // убераем рамку (контур вокруг кнопки)
+        font-size: 18px // размер текста
+        color: white // цвет тееста
+        font-weight: bold
+    &__text
+        font-size: 18px
+
+// 1й внелний элипс
+.elipse
+    width: 125px
+    height: 125px
+    background: linear-gradient(184.51deg,
+    rgba(70, 134, 226, 0.497) -2.23%,
+    rgba(181, 135, 143, 0.561526) 26.71%,
+    rgba(251, 135, 91, 0.602) 44.86%,
+    rgba(242, 157, 124, 0.442607) 71.53%,
+    rgba(217, 217, 217, 0) 106.68%)
+    transform: rotate(-4.95deg)
+    border-radius: 200px
+    display: flex
+    justify-content: center //  позиционируем внутренний круг */
+    align-items: center
+    //модификатор
+    &_big
+        width: 388px
+        height: 388px
+    &__substrate
+        width: 79px
+        height: 79px
+        background: #F1F1F1
+        border-radius: 200px
+        //модификатор
+        &_big
+            width: 255px
+            height: 255px
+
+//вторая секция
+.second-section
+    overflow: hidden
+    position: relative
+    min-height: 800px
+    &__title
+        margin-bottom: 34px
+    &__courses
+        display: inline-flex
+        justify-content: space-between
+        margin-bottom: 100px
+        margin-right: 20px
+    &__items
+        margin-right: 20px
+        &:last-child
+            margin-right: 0px
+    &__advantages
+        display: flex
+        justify-content: space-between
+    &__first-elipse
+        position: absolute
+        top: 380px
+        left: -20px
+        z-index: -1
+    
+.elipse__substrate
+    &_white
+        background: white
+
+.courses
+    position: relative // Т.к. в  &__img position:absolute
+    width: 367px
+    height: 367px
+    background: $color-grey
+    border-radius: 20px
+    display: flex
+    align-items: flex-end
+    font-weight: bold
+    &__img
+        height: 367px
+    &__text
+        width: 320px //высота контейнера с текстом
+        font-size: 40px
+        color: white
+        text-align: center
+        transform: rotate(90deg)
+        position: absolute 
+        top: 165px
+        left: 159px
+
+.courses_orange // модиикаторы
+    background: $color-orange
+
+.courses_blue // модиикаторы
+    background: $color-blue
+
+.advantages
+    display: inline-flex
+    align-items: center
+    &__img
+        margin-right: 20px
+        width: 78px
+    &__text
+        font-size: 16px
+        span
+            font-size: 30px
+            font-weight: bold
+ 
+// третья секция
+.third-section
+    position: relative // чтобы работал z-index
+    min-height: 800px
+    background: #F1F1F1
+    overflow: hidden
+    z-index: 0 // надо указать 0, чтобы элипс не прятался под фоном
+
+    &__container
+        display: flex // не используем indline-flex для контейнера, 
+            // т.к. собетрся центральное выравнивание контейнера, которое
+            // мы задавали  c margin:0 auto
+        flex-direction: row //размещаем левый и правый блок 
+            //горизонтально друг с другом
+        align-items: center
+        justify-content: space-between //задаем одинаковое растояние между
+            // левым и правым блоком
+        padding-left: 167px // отодбивагем левый заголовок от 
+            //границы левого контейнера
+        padding-top: 128px // отодвигаем правый блок от верхнего края контейнера
+    &__right-wrapper
+        max-width: 480px //ширина правого контейнера
+    &__right-title
+        font-size: 40px
+        color: $color-blue
+        margin-bottom: 30px
+        font-weight: bold
+
+    &__text
+        font-size: 16px
+        margin-bottom: 40px
+    &__first-elipse
+        position: absolute
+        top: 317px
+        left: -27px
+        z-index: -1
+    &__figure
+        height: 240px
+        width: 240px
+        position: absolute
+        top: 120px
+        left: 80px
+        z-index: -1
+    &__second-elipse
+        position: absolute
+        top: -66px
+        right: -139px
+    &__figure-big
+        position: absolute // чтобы фигура не уходила под подложку секции
+        top: 580px
+        right: -66px
+
+
+.elipse_medium
+    height: 300px
+    width: 300px
+.elipse__substrate_medium
+    height: 197px
+    width: 197px
+
+//footer
+.footer
+    position: relative
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0px // чтобы рисунок был прижат к нижнему краю
+    &__container
+        min-height: 360px
+        // нужно задавать высоту в контейнере, чтобы по вертикале
+         //  выравнить элементы, т.к. нужен размер пространства, в 
+         // в котором нужно выравнивать. Если бы задавали размеры footer, то высота контейнера была бы равно размеру внутренних элементов
+        // и не было пространства, в котором выравнивать. А теперь footer будет растягиваться под размера контента в container */
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__title
+        position: relative
+        margin-bottom: 30px
+    h5
+        margin-bottom: 10px
+
+//Адаптив сайта
+// Адаптив под горизонтальный планшет 
+@media (max-width: 1199px)
+    .main-section
+        height: 734px
+        &__second-elipse
+            top: 543px
+            right: -144px
+    .container
+        width: 960px
+    .left-wrapper
+        &__image
+            width: 800px
+        &__rectangle-blue
+            width: 491px
+            height: 181px
+        &__rectangle-orange
+            width: 528px
+            height: 185px
+        &__rectangle-grey
+            width: 508px
+            height: 182px
+    .right-wrappter
+        right: -8px
+
+    .courses 
+        width: 306px
+        height: 306px
+    .courses__img
+        height: 306px
+    .courses__text
+        font-size: 30px
+        top: 135px
+        left: 90px
+
+    .second-section
+        min-height: 646px
+        &__courses
+            display: flex
+            justify-content: center
+            margin-bottom: 83px
+        &__first-elipse 
+            top: 330px
+            left: -53px
+
+    .advantages__img 
+        margin-right: 12px
+        width: 70px
+
+    .third-section
+        &__container
+            padding-left: 161px
+        &__left-title
+            left: -31px
+        &__right-wrapper
+            max-width: 420px
+        &__second-elipse 
+            top: -126px
+            right: -180px
+
+
+// Адаптив под вертикальный планшет
+@media (max-width: 991px)
+    .main-section
+        margin-bottom: 43px
+        height: 571px
+        &__second-elipse 
+            top: 429px
+            right: -111px
+        &__first-elipse
+            top: -26px
+            right: -50px
+    .container
+        width: 720px
+    .left-wrapper
+        &__image
+            width: 557px
+            top: 33px
+        &__rectangle-blue 
+            width: 338px
+            height: 131px
+            top: 105px
+            left: -71px
+        &__rectangle-orange
+            top: 103px
+            left: -38px
+            width: 378px
+            height: 144px
+        &__rectangle-grey
+            width: 338px
+            height: 131px
+            top: 138px
+            left: 9px
+    .right-wrappter 
+        width: 387px
+        right: -118px
+        &__title 
+            margin-bottom: 4px
+        &__text 
+            font-size: 16px
+        &__icon-box 
+            justify-content: flex-start
+            margin-bottom: 10px
+    .title
+        font-size: 45px
+        &__hr
+            width: 70px
+            top: 46px
+    .buttons
+        &__main-btn 
+            width: 174px
+            height: 46px
+            font-size: 14px
+        &__text 
+            font-size: 14px
+        &__icon-btn
+            img
+                height: 46px
+    .logo
+        width: 106px
+    .buttons__main-btn
+        font-weight: normal
+    
+    .elipse
+        width: 150px
+        height: 150px
+        &__substrate
+            width: 100px
+            height: 100px
+        &__substrate_big
+            width: 170px
+            height: 170px
+    .elipse_big
+        width: 250px
+        height: 250px
+
+    .second-section
+        min-height: 444px
+        &__courses
+            display: flex
+            justify-content: space-between
+            margin-right: 0px  
+            margin-bottom: 44px
+        &__first-elipse
+            top: 213px
+            left: -81px
+    .courses
+        width: 224px
+        height: 224px
+        &__text
+            font-size: 24px
+            top: 97px
+            left: 24px
+        &__img
+            height: 224px
+    .advantages__img 
+        margin-right: 7px
+        width: 45px
+    .advantages__text
+        font-size: 14px
+
+    .third-section
+        min-height: 498px
+        &__container
+            padding-top: 53px
+        &__left-title
+            display: none // чтобы не отображать элемент
+        &__right-title
+            font-size: 34px
+            margin-bottom: 19px
+            br
+                display: none
+        &__text
+            font-size: 14px
+            line-height: 125%
+        &__figure 
+            height: 206px
+            width: 207px
+            top: 110px
+            left: 81px
+        &__figure-big
+            top: 339px
+            right: -123px
+            height: 300px
+        &__first-elipse
+            top: 232px
+            left: -22px
+        &__second-elipse 
+            top: -50px
+            right: -105px
+        &__right-wrapper
+            max-width: 485px
+
+    .elipse_medium 
+        height: 170px
+        width: 170px
+
+    .footer
+        &__container
+            min-height: 238px
+        &__img
+            height: 284px
+            left: -28px
+        &__title
+            padding-bottom: 10px
+        &__wrapper 
+            position: absolute
+            left: 386px
+
+// Адаптив под горизонтальный телефон
+@media (max-width: 767px)
+    .container
+        width: 540px
+    .nav-menu
+        position: fixed //чтобы меню был всегда прибито к определенному месту
+        top: 0 //координаты места, к которому будет прибито меню
+        right: -100% //элемент скроется за границы экрана
+        background: $color-blue
+        height: 100vh
+        z-index: 20
+        width: 50%
+        transition: 0.6s all // анимация
+        &__list 
+            flex-direction: column //выстроить пункты меню вертикально
+            justify-content: space-evenly // задает одинаковое растояние между элементамм
+            align-items: center //так как поменяли направление с помощью flex-direction:column, горизонтальное выравнние надо делать при помщи align-items
+            height: 100% //надо задать, чтобы сработал space-evenly
+        &__item 
+            margin-right: 0
+            font-size: 20px
+
+    /* margin-right: 35px
+    .hamburger // гамбургер
+        width: 40px
+        position: absolute // position:relative родительскому эл-ту не надо ставить, тк. позиционируем от body
+        top: 42px
+        right: 30px
+        height: 22px //задаем высоту, чтобы была область куда нажимать пальцем (чтобы она не ограничивалась только шириной полосок)
+        z-index: 30
+        span // если обращение к тегу, точку ставить не надо
+            height: 4px
+            width: 100%
+            background: black
+            display: block // span - строчный элемент
+            margin-bottom: 6px //лучше устанавливать четное число (удобно потом настраивать крестик)
+            transition: 1s all // время анимации (переход из гамбурега в крестик)
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active // модификатор для гамбурга (из гамбурега в крестик при наведении)
+        span
+            margin-bottom: -3px //уменьшаем ранее установленные margin-bottom
+            &:nth-child(1) //псевдокласс для обращения к отдельным элементам, номер элемента в ()
+                transform: translateY(3px) rotate(-45deg) // поворот палочки
+                    // translateY смещает элемент по оси Y
+            &:nth-last-child(2)
+                display: none // вторая палочка пропадает
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg) // повротов палочки
+    //чтобы проверить как работает, в консоли разработчика в тег 
+    // div class="hamburger" нужно вручную дописать модификатор hamburger-active       
+    
+    .nav-menu_active 
+        right: 0px
+
+
+
+    // чтобы выезжало меню справа
+     // .nav-menu_active  - модификатор (выезжающее меню), нужен только для того чтобы меню появлялось
+        // стилизуем в классе .nav-menu (выше)        
+    //чтобы проверить как работает, в консоли разработчика в тег 
+    // <nav class="main-section__nav nav-menu"> нужно вручную дописать модификатор nav-menu_active           
+                
+
+
+
+// Адаптив под горизонтальный телефон
+@media (max-width: 575px)
+    .contianer
+        width: 100%    
+
+
+
+
+
+
+
+
+
+
+

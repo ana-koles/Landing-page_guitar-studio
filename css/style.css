@@ -1,0 +1,1361 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, ../../Учеба/VS Code/Project_two/src/sass/normalizes.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+body {
+  line-height: 1;
+}
+
+/* line 31, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 34, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 37, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 42, ../../Учеба/VS Code/Project_two/src/sass/resets.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 4, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GeoramaT";
+  src: url("../fonts/Georama-Regular.ttf");
+  font-display: swap;
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeoramaT";
+  src: url("../fonts/Georama-Bold.ttf");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 22, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+html {
+  font-family: "GeoramaT";
+  font-weight: regular;
+}
+
+/* line 30, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 35, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.main-section {
+  position: relative;
+  overflow: hidden;
+  height: 800px;
+  background: #F1F1F1;
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+
+/* line 42, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.main-section__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 67px;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* line 49, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.main-section__content-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 53, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.main-section__first-elipse {
+  position: absolute;
+  top: 0px;
+  right: 280px;
+}
+
+/* line 58, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.main-section__second-elipse {
+  position: absolute;
+  top: 600px;
+  right: -150px;
+}
+
+/* line 64, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.logo {
+  width: 130px;
+}
+
+/* line 68, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 71, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.nav-menu__item {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+/* line 74, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.nav-menu__item:last-child {
+  margin-right: 0px;
+}
+
+/* line 76, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 80, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.left-wrapper {
+  position: relative;
+}
+
+/* line 84, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.left-wrapper__image {
+  position: relative;
+  z-index: 3;
+}
+
+/* line 88, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.left-wrapper__rectangle-blue {
+  position: absolute;
+  top: 120px;
+  left: -80px;
+  width: 526px;
+  height: 220px;
+  background: #4686E2;
+  border-radius: 100px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  transform: rotate(-74.84deg);
+  z-index: 0;
+}
+
+/* line 101, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.left-wrapper__rectangle-orange {
+  position: absolute;
+  top: 130px;
+  left: -45px;
+  width: 608px;
+  height: 205px;
+  background: #FB875B;
+  border-radius: 100px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  transform: rotate(-51.67deg);
+  z-index: 2;
+}
+
+/* line 112, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.left-wrapper__rectangle-grey {
+  position: absolute;
+  top: 190px;
+  left: 25px;
+  width: 560px;
+  height: 220px;
+  background: #D2D2D2;
+  border-radius: 100px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  transform: rotate(-29.39deg);
+  z-index: 1;
+}
+
+/* line 124, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.icons {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+/* line 127, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.icons__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 34px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+
+/* line 136, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.icons__items:last-child {
+  margin-right: 0px;
+}
+
+/* line 138, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.icons__items i {
+  font-size: 20px;
+}
+
+/* line 143, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.right-wrappter {
+  width: 400px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  z-index: 2;
+}
+
+/* line 152, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.right-wrappter__icon-box {
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 156, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.right-wrappter__title {
+  margin-bottom: 50px;
+}
+
+/* line 158, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.right-wrappter__text {
+  font-size: 20px;
+  margin-bottom: 34px;
+}
+
+/* line 162, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.title {
+  font-size: 64px;
+  position: relative;
+  font-weight: bold;
+}
+
+/* line 166, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.title__hr {
+  bottom: 300px;
+  width: 90px;
+  position: absolute;
+  top: 64px;
+  margin: 0px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+/* line 178, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.buttons {
+  display: inline-flex;
+}
+
+/* line 180, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.buttons__icon-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 183, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.buttons__icon-btn img {
+  margin-right: 5px;
+}
+
+/* line 185, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.buttons__main-btn {
+  margin-right: 15px;
+  width: 220px;
+  height: 50px;
+  left: 923px;
+  top: 384px;
+  background: #FB875B;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 197, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.buttons__text {
+  font-size: 18px;
+}
+
+/* line 201, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse {
+  width: 125px;
+  height: 125px;
+  background: linear-gradient(184.51deg, rgba(70, 134, 226, 0.497) -2.23%, rgba(181, 135, 143, 0.561526) 26.71%, rgba(251, 135, 91, 0.602) 44.86%, rgba(242, 157, 124, 0.442607) 71.53%, rgba(217, 217, 217, 0) 106.68%);
+  transform: rotate(-4.95deg);
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 216, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse_big {
+  width: 388px;
+  height: 388px;
+}
+
+/* line 219, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse__substrate {
+  width: 79px;
+  height: 79px;
+  background: #F1F1F1;
+  border-radius: 200px;
+}
+
+/* line 225, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse__substrate_big {
+  width: 255px;
+  height: 255px;
+}
+
+/* line 230, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section {
+  overflow: hidden;
+  position: relative;
+  min-height: 800px;
+}
+
+/* line 234, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section__title {
+  margin-bottom: 34px;
+}
+
+/* line 236, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section__courses {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  margin-right: 20px;
+}
+
+/* line 241, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section__items {
+  margin-right: 20px;
+}
+
+/* line 243, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section__items:last-child {
+  margin-right: 0px;
+}
+
+/* line 245, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section__advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 248, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.second-section__first-elipse {
+  position: absolute;
+  top: 380px;
+  left: -20px;
+  z-index: -1;
+}
+
+/* line 255, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse__substrate_white {
+  background: white;
+}
+
+/* line 258, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.courses {
+  position: relative;
+  width: 367px;
+  height: 367px;
+  background: #D2D2D2;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+/* line 267, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.courses__img {
+  height: 367px;
+}
+
+/* line 269, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.courses__text {
+  width: 320px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 165px;
+  left: 159px;
+}
+
+/* line 279, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.courses_orange {
+  background: #FB875B;
+}
+
+/* line 282, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.courses_blue {
+  background: #4686E2;
+}
+
+/* line 285, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.advantages {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 288, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.advantages__img {
+  margin-right: 20px;
+  width: 78px;
+}
+
+/* line 291, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.advantages__text {
+  font-size: 16px;
+}
+
+/* line 293, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.advantages__text span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 298, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section {
+  position: relative;
+  min-height: 800px;
+  background: #F1F1F1;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* line 305, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 167px;
+  padding-top: 128px;
+}
+
+/* line 317, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+
+/* line 319, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__right-title {
+  font-size: 40px;
+  color: #4686E2;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* line 325, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__text {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* line 328, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__first-elipse {
+  position: absolute;
+  top: 317px;
+  left: -27px;
+  z-index: -1;
+}
+
+/* line 333, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__figure {
+  height: 240px;
+  width: 240px;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  z-index: -1;
+}
+
+/* line 340, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__second-elipse {
+  position: absolute;
+  top: -66px;
+  right: -139px;
+}
+
+/* line 344, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.third-section__figure-big {
+  position: absolute;
+  top: 580px;
+  right: -66px;
+}
+
+/* line 350, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse_medium {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 353, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.elipse__substrate_medium {
+  height: 197px;
+  width: 197px;
+}
+
+/* line 358, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.footer {
+  position: relative;
+}
+
+/* line 360, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+
+/* line 364, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.footer__container {
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* line 373, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.footer__title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 376, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+.footer h5 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1199px) {
+  /* line 382, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .main-section {
+    height: 734px;
+  }
+  /* line 384, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .main-section__second-elipse {
+    top: 543px;
+    right: -144px;
+  }
+  /* line 387, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .container {
+    width: 960px;
+  }
+  /* line 390, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__image {
+    width: 800px;
+  }
+  /* line 392, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__rectangle-blue {
+    width: 491px;
+    height: 181px;
+  }
+  /* line 395, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__rectangle-orange {
+    width: 528px;
+    height: 185px;
+  }
+  /* line 398, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__rectangle-grey {
+    width: 508px;
+    height: 182px;
+  }
+  /* line 401, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .right-wrappter {
+    right: -8px;
+  }
+  /* line 404, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .courses {
+    width: 306px;
+    height: 306px;
+  }
+  /* line 407, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .courses__img {
+    height: 306px;
+  }
+  /* line 409, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .courses__text {
+    font-size: 30px;
+    top: 135px;
+    left: 90px;
+  }
+  /* line 414, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .second-section {
+    min-height: 646px;
+  }
+  /* line 416, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .second-section__courses {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 83px;
+  }
+  /* line 420, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .second-section__first-elipse {
+    top: 330px;
+    left: -53px;
+  }
+  /* line 424, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .advantages__img {
+    margin-right: 12px;
+    width: 70px;
+  }
+  /* line 429, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__container {
+    padding-left: 161px;
+  }
+  /* line 431, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__left-title {
+    left: -31px;
+  }
+  /* line 433, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__right-wrapper {
+    max-width: 420px;
+  }
+  /* line 435, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__second-elipse {
+    top: -126px;
+    right: -180px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 442, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .main-section {
+    margin-bottom: 43px;
+    height: 571px;
+  }
+  /* line 445, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .main-section__second-elipse {
+    top: 429px;
+    right: -111px;
+  }
+  /* line 448, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .main-section__first-elipse {
+    top: -26px;
+    right: -50px;
+  }
+  /* line 451, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .container {
+    width: 720px;
+  }
+  /* line 454, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__image {
+    width: 557px;
+    top: 33px;
+  }
+  /* line 457, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__rectangle-blue {
+    width: 338px;
+    height: 131px;
+    top: 105px;
+    left: -71px;
+  }
+  /* line 462, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__rectangle-orange {
+    top: 103px;
+    left: -38px;
+    width: 378px;
+    height: 144px;
+  }
+  /* line 467, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .left-wrapper__rectangle-grey {
+    width: 338px;
+    height: 131px;
+    top: 138px;
+    left: 9px;
+  }
+  /* line 472, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .right-wrappter {
+    width: 387px;
+    right: -118px;
+  }
+  /* line 475, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .right-wrappter__title {
+    margin-bottom: 4px;
+  }
+  /* line 477, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .right-wrappter__text {
+    font-size: 16px;
+  }
+  /* line 479, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .right-wrappter__icon-box {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  /* line 482, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .title {
+    font-size: 45px;
+  }
+  /* line 484, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .title__hr {
+    width: 70px;
+    top: 46px;
+  }
+  /* line 488, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .buttons__main-btn {
+    width: 174px;
+    height: 46px;
+    font-size: 14px;
+  }
+  /* line 492, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .buttons__text {
+    font-size: 14px;
+  }
+  /* line 495, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .buttons__icon-btn img {
+    height: 46px;
+  }
+  /* line 497, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .logo {
+    width: 106px;
+  }
+  /* line 499, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .buttons__main-btn {
+    font-weight: normal;
+  }
+  /* line 502, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .elipse {
+    width: 150px;
+    height: 150px;
+  }
+  /* line 505, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .elipse__substrate {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 508, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .elipse__substrate_big {
+    width: 170px;
+    height: 170px;
+  }
+  /* line 511, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .elipse_big {
+    width: 250px;
+    height: 250px;
+  }
+  /* line 515, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .second-section {
+    min-height: 444px;
+  }
+  /* line 517, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .second-section__courses {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-bottom: 44px;
+  }
+  /* line 522, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .second-section__first-elipse {
+    top: 213px;
+    left: -81px;
+  }
+  /* line 525, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .courses {
+    width: 224px;
+    height: 224px;
+  }
+  /* line 528, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .courses__text {
+    font-size: 24px;
+    top: 97px;
+    left: 24px;
+  }
+  /* line 532, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .courses__img {
+    height: 224px;
+  }
+  /* line 534, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .advantages__img {
+    margin-right: 7px;
+    width: 45px;
+  }
+  /* line 537, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .advantages__text {
+    font-size: 14px;
+  }
+  /* line 540, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section {
+    min-height: 498px;
+  }
+  /* line 542, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__container {
+    padding-top: 53px;
+  }
+  /* line 544, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__left-title {
+    display: none;
+  }
+  /* line 546, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__right-title {
+    font-size: 34px;
+    margin-bottom: 19px;
+  }
+  /* line 549, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__right-title br {
+    display: none;
+  }
+  /* line 551, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__text {
+    font-size: 14px;
+    line-height: 125%;
+  }
+  /* line 554, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__figure {
+    height: 206px;
+    width: 207px;
+    top: 110px;
+    left: 81px;
+  }
+  /* line 559, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__figure-big {
+    top: 339px;
+    right: -123px;
+    height: 300px;
+  }
+  /* line 563, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__first-elipse {
+    top: 232px;
+    left: -22px;
+  }
+  /* line 566, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__second-elipse {
+    top: -50px;
+    right: -105px;
+  }
+  /* line 569, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .third-section__right-wrapper {
+    max-width: 485px;
+  }
+  /* line 572, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .elipse_medium {
+    height: 170px;
+    width: 170px;
+  }
+  /* line 577, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .footer__container {
+    min-height: 238px;
+  }
+  /* line 579, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .footer__img {
+    height: 284px;
+    left: -28px;
+  }
+  /* line 582, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .footer__title {
+    padding-bottom: 10px;
+  }
+  /* line 584, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .footer__wrapper {
+    position: absolute;
+    left: 386px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 590, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .container {
+    width: 540px;
+  }
+  /* line 592, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: #4686E2;
+    height: 100vh;
+    z-index: 20;
+    width: 50%;
+    transition: 0.6s all;
+  }
+  /* line 601, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .nav-menu__list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  /* line 606, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .nav-menu__item {
+    margin-right: 0;
+    font-size: 20px;
+  }
+  /* margin-right: 35px */
+  /* line 611, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger {
+    width: 40px;
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    height: 22px;
+    z-index: 30;
+  }
+  /* line 618, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger span {
+    height: 4px;
+    width: 100%;
+    background: black;
+    display: block;
+    margin-bottom: 6px;
+    transition: 1s all;
+  }
+  /* line 625, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger span:last-child {
+    margin-bottom: 0px;
+  }
+  /* line 628, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger_active span {
+    margin-bottom: -3px;
+  }
+  /* line 630, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 633, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger_active span:nth-last-child(2) {
+    display: none;
+  }
+  /* line 635, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 640, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .nav-menu_active {
+    right: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 656, ../../Учеба/VS Code/Project_two/src/sass/style.sass */
+  .contianer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

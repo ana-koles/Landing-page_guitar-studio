@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1e07f8a0cf.js" crossorigin="anonymous"></script> <!-- код к иконкам -->
+    <title>Guitar</title>
+    <meta name="description" content="The best teacher to learn how to play quitar">
+
+    <!-- fav-icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!-- Первая секция -->
+    <section class="main-section"> 
+        <!-- Гамбургер -->
+        <div class="hamburger">
+            <span></span> <!-- полоски -->
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <!-- ограничивающий контейнер нав меню -->
+        <div class="container main-section__nav-container">
+
+            <!-- Навигационное меню -->
+            <header class="main-section__header">
+                <a href="#"><img class="logo" src="img/Logo.png" alt="logo"></a>
+            </header>
+
+            <nav class="main-section__nav nav-menu"> <!-- nav-menu - название блока -->
+                <ul class="nav-menu__list"> <!-- nav-menu__list - Элемент блока -->
+                    <li class="nav-menu__item"><a href="#about-me"> <!-- якорная ссылка -->
+                        About me</a></li><!-- nav-menu__item - тоже элемент блока -->
+                    <li class="nav-menu__item"><a href="#lessons">
+                        Lessons</a></li>
+                    <li class="nav-menu__item"><a href="#">
+                        Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ограничивающий контейнер основного контента первой секции -->
+        <div class="container main-section__content-container">
+           
+            <!--   Левая часть первой секции  -->
+            <div class="left-wrapper">
+                <img src="img/Guitarist.png" alt="Photo-guitarist" class="left-wrapper__image">
+                <div class="left-wrapper__rectangle-blue"></div>
+                <div class="left-wrapper__rectangle-orange"></div>
+                <div class="left-wrapper__rectangle-grey"></div>
+            </div>
+
+            <!-- Правая часть первой секции -->
+            <div class="right-wrappter">
+                 <!-- иконки -->
+                <div class="right-wrappter__icon-box icons">
+                    <div class="icons__items">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div> <!-- иконочный стиль (как текст) -->
+                    <div class="icons__items">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="icons__items">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icons__items">
+                        <i class="fa-brands fa-viber"></i>
+                    </div>
+                </div>
+                 <!-- заголовок -->
+                <h1 class="right-wrappter__title title">Hi! I’m Steve 
+                    <hr class="title__hr">
+                </h1>
+                <p class="right-wrappter__text">I will teach you how to play guitar</p>
+                
+                <!-- кнопки -->
+                <div class="right-wrappter__button buttons">
+                    <!-- обычная кнопка -->
+                    <button class="buttons__main-btn">Make an appointment</button>
+                    
+                    <!-- иконка с текстом -->
+                    <div class="right-wrappter__icon-btn buttons__icon-btn">
+                        <!-- right-wrappter__icon-btn - Нужен для внешней геометрии, buttons__main-icon - для стилизации
+                        buttons__icon-btn -->
+                        <img src="icons/chat.svg" alt="chat">
+                        <p class="buttons__text">Have <br> questions?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- круг -->
+            <!-- class first-elipse используется для дикарирования, блок elipse для оформления -->
+            <div class="main-section__first-elipse elipse"><!-- размещаем внешний элипс внутри контейнера, 
+                который огриничивает контент (внутри сетки) -->
+                <!-- внутренний круг --> 
+                <div class="elipse__substrate"> <!-- элемент блока -->
+                </div>
+            </div>
+        </div>
+
+        <!-- второй круг, за пределами контейнера сетки + модификатор (по сути это доп класс) -->
+        <div class="main-section__second-elipse elipse elipse_big"><!-- размещаем внешний элипс внутри контейнера, 
+            который огриничивает контент (внутри сетки) -->
+            <!-- внутренний круг --> 
+            <div class="elipse__substrate elipse__substrate_big"> <!-- элемент блока -->
+            </div>
+        </div>
+ 
+    </section>
+
+    <!-- Вторая секция -->
+    <section id="about-me" class="second-section"> <!-- id - идентификатор для ссылки из Nav menu -->
+
+        <div class="container secon-section__container">
+            <!-- заголовок -->
+            <h2 class="second-section__title title">About me
+                <hr class="title__hr">
+            </h2>
+
+            <!-- курсы -->
+            <div class="second-section__courses">
+                <div class="second-section__items courses">
+                    <img class="courses__img" src="img/Electro.png" alt="Electro-quitar">
+                    <p class="courses__text">Electric Quitart</p>
+                </div>
+                <div class="second-section__items courses courses_orange"> <!-- courses_orange - модификатор -->
+                    <img class="courses__img" src="img/Acoustic.png" alt="Acoustic-quitar">
+                    <p class="courses__text">Acoustic Quitart</p>
+                </div>
+                <div class="second-section__items courses courses_blue">
+                    <img class="courses__img" src="img/ukulele.png" alt="Ukelele-quitar">
+                    <p class="courses__text">Ukelele Quitart</p>
+                </div>
+            </div>
+
+            <!-- Преимущества -->
+            <div class="second-section__advantages">
+                <!-- experience -->
+                <div class="second-section__item advantages">
+                    <img class="advantages__img" src="icons/first.png" alt="experience">
+                    <p class="advantages__text"><span>11</span><br>year experience
+                    </p>
+                </div>
+                <!-- studing -->
+                <div class="second-section__item advantages">
+                    <img class="advantages__img" src="icons/studing.png" alt="experience">
+                    <p class="advantages__text"><span>2 000</span><br>hours of studing
+                    </p>
+                </div>
+            
+                <!-- reviews -->
+                <div class="second-section__item advantages">
+                    <img class="advantages__img" src="icons/reviews.png" alt="experience">
+                    <p class="advantages__text"><span>1 200 </span><br>positive reviews
+                    </p>
+                </div>
+
+                <!-- students -->
+                <div class="second-section__item advantages">
+                    <img class="advantages__img" src="icons/students.png" alt="experience">
+                    <p class="advantages__text"><span>200</span><br>students finished 
+                        <!-- br - перенос, span - стилизация строчного элемента -->
+                    </p>
+                </div>
+            </div>
+
+            <!-- декоративный круг -->
+            <!-- class seconds-elipse используется для дикарирования, блок elipse для оформления -->
+            <div class="second-section__first-elipse elipse"><!-- размещаем внешний элипс внутри контейнера, 
+                который огриничивает контент (внутри сетки) -->
+                <!-- внутренний круг --> 
+                <div class="elipse__substrate elipse__substrate_white"> <!-- элемент блока -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Третья секция -->
+    <section id="lessons" class="third-section">
+        <!-- ограничивающий контейнер основного контента третьей секции -->
+        <div class="container third-section__container">
+
+            <!--   Левая часть контейнера  -->
+            <div class="third-section__left-wrapper">
+                <h3 class="third-section__left-title title">Studing
+                <hr class="title__hr">
+                </h3>
+            </div>
+
+            <!-- Правая часть контейнера -->
+            <div class="third-section__right-wrapper">
+                <h4 class="third-section__right-title">You will be proud of <br> yourself
+                </h4>
+
+                <p class="third-section__text">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <br><br> <!-- отступы между абзацами -->
+                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. <br><br>
+                    The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+
+                 <!-- кнопки -->
+                <div class="right-wrappter__button buttons">
+                    <!-- обычная кнопка -->
+                    <button class="buttons__main-btn">Make an appointment</button>
+                    
+                    <!-- иконка с текстом -->
+                    <div class="right-wrappter__icon-btn buttons__icon-btn">
+                    <!-- right-wrappter__icon-btn - Нужен для внешней геометрии, buttons__main-icon - для стилизации
+                    buttons__icon-btn -->
+                        <img src="icons/chat.svg" alt="chat">
+                        <p class="buttons__text">Have <br> questions?</p>
+                    </div>
+                </div>
+            </div>
+
+             <!--  круг - cоздаем ВНУТРИ контейнера-->
+            <!-- class third-elipse используется для дикарирования, блок elipse для оформления -->
+            <div class="third-section__first-elipse elipse elipse_medium"><!-- размещаем внешний элипс внутри контейнера, 
+                который огриничивает контент (внутри сетки) -->
+                <!-- внутренний круг --> 
+                <div class="elipse__substrate elipse__substrate_medium"> <!-- элемент блока -->
+                </div>
+            </div>
+           <!--  декоративный круг (с полосками) -->
+           <img class="third-section__figure" src="img/elipse_strips.svg" alt="figure">
+
+        </div>
+        <!--  круг - cоздаем ЗА  контейнером-->
+            <!-- class third-elipse используется для дикарирования, блок elipse для оформления -->
+        <div class="third-section__second-elipse elipse elipse_medium"><!-- размещаем внешний элипс внутри контейнера, 
+                который огриничивает контент (внутри сетки) -->
+                <!-- внутренний круг --> 
+            <div class="elipse__substrate elipse__substrate_medium"> <!-- элемент блока -->
+            </div>
+        </div>
+         <!--  декоративный круг (с полосками) -->
+         <img class="third-section__figure-big" src="img/elipse_strips_big.svg" alt="figure">
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+
+            <!-- изображение гитары -->
+            <img class="footer__img" src="img/quitar.png" alt="quitar">
+
+            <!-- Обертка для заголовка и иконок -->
+            <div class="footer__wrapper">
+                <h5 class="footer_title title">
+                    <hr class="title__hr">Contact us
+                </h5>
+
+                <!-- иконки -->
+                <div class="footer__icon-box icons">
+                    <div class="icons__items">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div> <!-- иконочный стиль (как текст) -->
+                    <div class="icons__items">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="icons__items">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icons__items">
+                        <i class="fa-brands fa-viber"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- подключаем библиотеку jQuery для настройки прокрутки -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- подключение файла Js, нужно размещать внизу, так как Js
+    срабатывает только тогда когда подгрузился html код -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
